@@ -1,0 +1,56 @@
+.client {
+  padding-top: 0;
+}
+
+.client__regular {
+  margin-top: 94px;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $main-color-black;
+}
+.client__item {
+  display: flex;
+}
+
+.client__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: border-color;
+
+  &:hover {
+    border-color: $main-color-blue;
+  }
+}
+
+.client__icon {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: fill;
+}
+
+.client__link:hover .client__icon {
+  fill: $main-fill-blue;
+}
+
+.client__link:focus .client__icon {
+  fill: $main-fill-blue;
+}
+
+.client__list:not(:last-child) {
+  margin-right: 30px;
+}

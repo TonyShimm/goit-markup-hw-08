@@ -1,0 +1,71 @@
+.social-net__icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-net__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: background-color, fill;
+
+  &:hover,
+  &:focus {
+    background-color: $main-color-blue;
+  }
+}
+
+.social-net__link:hover .social-net__icon {
+  fill: $main-fill-white;
+}
+
+.social-net__link:focus .social-net__icon {
+  fill: $main-fill-white;
+}
+
+.social-net {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-footer__icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: $main-color-white;
+}
+.social-footer {
+  display: flex;
+}
+
+.social-footer__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: background-color;
+
+  &:hover,
+  :focus {
+    background-color: $main-color-blue;
+  }
+}
+
+.social-footer__link:not(:last-child) {
+  margin-right: 10px;
+}
