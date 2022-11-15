@@ -3,25 +3,62 @@
 }
 
 .client__regular {
-  margin-top: 94px;
-  margin-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: $main-color-black;
 }
 .client__item {
-  display: flex;
+  @media screen and (min-width: 480px) {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.client__list {
+  @media screen and (min-width: 480px) {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 180px) / 6);
+    margin: 15px;
+  }
 }
 
 .client__link {
+  padding: 16px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  height: 92px;
+  width: 100%;
+  height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
@@ -49,8 +86,4 @@
 
 .client__link:focus .client__icon {
   fill: $main-fill-blue;
-}
-
-.client__list:not(:last-child) {
-  margin-right: 30px;
 }

@@ -2,9 +2,66 @@
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  text-align: center;
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    text-align: left;
+  }
+}
+
+.footer__address {
+  margin-bottom: 60px;
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: $main-color-blue;
+}
+.footer-logo__accent {
+  color: $main-color-white;
+}
+
+.footer__adress {
+  margin-top: 9px;
+  margin-bottom: 9px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: $main-color-white;
+}
+
+.footer-contacts__item {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: color;
+
+  &:hover,
+  &:focus {
+    color: $main-color-blue;
+  }
+}
+.footer-contacts__list:not(:last-child) {
+  margin-bottom: 9px;
 }
