@@ -1,23 +1,75 @@
 .hero {
-  padding: 118px 60px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
-  text-align: center;
+  @media (min-width: 1199px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+  }
 
-  border-color: #c4c4c4;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/Img-hero.jpg);
+
+  max-width: 1600px;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-color: #c4c4c4;
+
+  @media (max-width: 767px) {
+    background-image: $imagegradient, url("../images/mobbanner.jpg");
+  }
+
+  @media (max-width: 767px) and (min-device-pixel-ratio: 2),
+    (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+    (max-width: 767px) and (min-resolution: 192dpi),
+    (max-width: 767px) and (min-resolution: 2dppx) {
+    background-image: $imagegradient, url("../images/mobbanner2x.jpg");
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    background-image: $imagegradient, url("../images/tabbanner.jpg");
+  }
+
+  @media (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2),
+    (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2),
+    (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi),
+    (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+    background-image: $imagegradient, url("../images/hero/tabbanner2x.jpg");
+  }
+
+  @media (min-width: 1200px) {
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: $imagegradient, url("../images/descbanner.jpg");
+  }
+
+  @media (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+    (min-width: 1200px) and (min-resolution: 192dpi),
+    (min-width: 1200px) and (min-resolution: 2dppx) {
+    background-image: $imagegradient, url("../images/descbanner2x.jpg");
+  }
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $headback;
 }
 
 .hero-title {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 26px;
+  font-size: 44px;
   line-height: 1.61;
   text-align: center;
   letter-spacing: 0.06em;
