@@ -119,6 +119,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -467,8 +470,8 @@ img {
 .hero {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Img-hero.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-hero.jpg);
   max-width: 1600px;
@@ -621,7 +624,7 @@ img {
 
 .feature__title {
   margin-bottom: 10px;
-  text-align: center;
+  text-align: left;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -698,7 +701,6 @@ img {
 }
 
 .our-team__title {
-  padding-top: 60px;
   padding-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
