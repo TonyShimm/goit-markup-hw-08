@@ -115,6 +115,12 @@ img {
   }
 }
 
+.header-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media screen and (max-width: 767px) {
   .contact__link.telephone {
     font-weight: 500;
