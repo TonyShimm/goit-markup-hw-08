@@ -24,33 +24,30 @@
   <body>
     <header class="header">
       <div class="container header-wrap">
-        <nav class="mobile-backdrop__nav">
-          <a href="./index.html" class="logo"
-            >Web<span class="logo__accent">Studio</span></a
+        <a href="./index.html" class="logo"
+          >Web<span class="logo__accent">Studio</span></a
+        >
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="mobile-backdrop"
+          data-menu-button
+        >
+          <svg
+            width="40px"
+            height="40px"
+            aria-label="Перемикач мобільного меню"
           >
-          <button
-            type="button"
-            class="menu-button"
-            aria-expanded="false"
-            aria-controls="mobile-backdrop"
-            data-menu-button
-          >
-            <svg
-              width="40px"
-              height="40px"
-              aria-label="Перемикач мобільного меню"
-            >
-              <use
-                class="icon-burger"
-                href="./images/icons.svg#icon-burger"
-              ></use>
-              <use
-                class="icon-close"
-                href="./images/icons.svg#icon-close"
-              ></use>
-            </svg>
-          </button>
-          <div class="mobile-backdrop" data-menu>
+            <use
+              class="icon-burger"
+              href="./images/icons.svg#icon-burger"
+            ></use>
+            <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="mobile-backdrop" data-menu>
+          <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
                 <a href="" class="nav__link nav__link--current">Студія</a>
@@ -64,22 +61,34 @@
                 <a href="" class="nav__link">Контакти</a>
               </li>
             </ul>
-            <ul class="social-links">
-              <li class="social-links__item">
-                <a class="social-links__link" href="#">Instagram</a>
-              </li>
-              <li class="social-links__item">
-                <a class="social-links__link" href="#">Twitter</a>
-              </li>
-              <li class="social-links__item">
-                <a class="social-links__link" href="#">Facebook</a>
-              </li>
-              <li class="social-links__item">
-                <a class="social-links__link" href="#">LinkedIn</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+          </nav>
+          <ul class="mobile-contact">
+            <li class="contact__item">
+              <a class="contact__link mailto" href="mailto:info@devstudio.com">
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="contact__item">
+              <a class="contact__link telephone" href="tel:+380961111111">
+                +380961111111</a
+              >
+            </li>
+          </ul>
+          <ul class="social-links">
+            <li class="social-links__item">
+              <a class="social-links__link" href="#">Instagram</a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="#">Twitter</a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="#">Facebook</a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
         <ul class="contact">
           <li class="contact__item">
             <a class="contact__link mailto" href="mailto:info@devstudio.com">
