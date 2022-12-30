@@ -9,7 +9,23 @@
   color: $main-color-white;
 }
 
+.subscribe__form {
+  justify-content: center;
+
+  gap: 12px;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
 .subscribe__button {
+  justify-content: center;
+  align-items: center;
+  display: flex;
   width: 200px;
   height: 50px;
   font-weight: 700;
@@ -39,8 +55,10 @@
 }
 
 .subscribe__input {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
   align-items: center;
-  margin-bottom: 20px;
   min-width: 358px;
   height: 50px;
   padding: 0;

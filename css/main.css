@@ -167,7 +167,7 @@ body {
 @media screen and (min-width: 768px) {
   .contact__link {
     font-weight: 500;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.02em;
     color: #757575;
@@ -478,10 +478,8 @@ body {
 .hero {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Img-hero.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-hero.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tabbanner.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tabbanner.jpg);
   max-width: 1600px;
   background-size: cover;
   background-position: center;
@@ -489,18 +487,18 @@ body {
   border-color: #c4c4c4;
 }
 
-@media (min-width: 1199px) {
+@media (max-width: 1199px) {
   .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    height: 600px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    height: 400px;
   }
 }
 
 @media (max-width: 767px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Img-hero.jpg), url("../images/mobbanner.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-hero.jpg), url("../images/mobbanner.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobbanner.jpg), url("../images/mobbanner.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobbanner.jpg), url("../images/mobbanner.jpg");
   }
 }
 
@@ -545,12 +543,23 @@ body {
 .hero-title {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
   line-height: 1.61;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (max-width: 1199px) {
+  .hero-title {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+  }
 }
 
 .hero-button {
@@ -609,27 +618,20 @@ body {
 }
 
 .feature__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 120px;
   background-color: #f5f4fa;
+  margin-bottom: 30px;
   border-radius: 4px;
-}
-
-@media screen and (min-width: 480px) {
-  .feature__container {
-    padding: 25px 190px;
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .feature__container {
-    padding: 25px 142px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .feature__container {
-    padding: 25px 100px;
-  }
 }
 
 .feature__title {
@@ -641,6 +643,12 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+}
+
+@media screen and (max-width: 767px) {
+  .feature__title {
+    text-align: center;
+  }
 }
 
 .feature__text {
@@ -1111,7 +1119,37 @@ img {
   color: #ffffff;
 }
 
+.subscribe__form {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe__form {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .subscribe__button {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 200px;
   height: 50px;
   font-weight: 700;
@@ -1147,7 +1185,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 20px;
   min-width: 358px;
   height: 50px;
   padding: 0;
@@ -1158,6 +1195,12 @@ img {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe__input {
+    margin-bottom: 20px;
+  }
 }
 
 .backdrop {
