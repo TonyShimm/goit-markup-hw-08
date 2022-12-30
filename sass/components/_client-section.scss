@@ -13,7 +13,7 @@
   color: $main-color-black;
 }
 .client__item {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
     margin: -15px;
     display: flex;
     flex-wrap: wrap;
@@ -36,7 +36,7 @@
 }
 
 .client__list {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
     width: calc((100% - 60px) / 2);
     margin: 15px;
   }
