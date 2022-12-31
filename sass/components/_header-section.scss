@@ -236,7 +236,7 @@
 
 .menu-button {
   @media screen and(max-width:767px) {
-    margin-left: 258px;
+    margin-left: auto;
     cursor: pointer;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border: none;
