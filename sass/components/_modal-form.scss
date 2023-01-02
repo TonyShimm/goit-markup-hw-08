@@ -163,9 +163,14 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+  margin-top: 20px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $main-color-grey;
+
+  @media screen and (max-width: 479px) {
+    font-size: 8px;
+  }
 }
 
 .visually-hidden {
@@ -212,4 +217,8 @@
   line-height: 24px;
   letter-spacing: 0.03em;
   color: $main-color-blue;
+
+  @media screen and (max-width: 479px) {
+    font-size: 10px;
+  }
 }
