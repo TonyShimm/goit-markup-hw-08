@@ -1,5 +1,4 @@
 .subscribe__title {
-  display: flex;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -8,6 +7,10 @@
   text-transform: uppercase;
 
   color: $main-color-white;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .subscribe__form {
@@ -64,7 +67,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 450px;
+    width: 358px;
     margin-bottom: 20px;
   }
 

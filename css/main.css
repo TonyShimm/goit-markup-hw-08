@@ -627,6 +627,11 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
 }
+@media screen and (min-width: 1200px) {
+  .our-team__title {
+    font-size: 36px;
+  }
+}
 
 img {
   display: block;
@@ -772,6 +777,11 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .client__regular {
+    font-size: 36px;
+  }
 }
 
 @media screen and (min-width: 320px) {
@@ -938,7 +948,6 @@ img {
 }
 
 .subscribe__title {
-  display: flex;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -946,6 +955,11 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__title {
+    display: flex;
+  }
 }
 
 .subscribe__form {
@@ -1017,7 +1031,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .subscribe__input {
-    width: 450px;
+    width: 358px;
     margin-bottom: 20px;
   }
 }
@@ -1209,7 +1223,7 @@ img {
 .field-group__policy-label {
   position: relative;
   display: flex;
-  font-size: 12px;
+  font-size: 14px;
   gap: 8px;
   align-items: center;
   justify-content: center;
@@ -1222,6 +1236,11 @@ img {
 @media screen and (max-width: 479px) {
   .field-group__policy-label {
     font-size: 8px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .field-group__policy-label {
+    font-size: 12px;
   }
 }
 
